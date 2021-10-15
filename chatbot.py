@@ -54,7 +54,7 @@ def get_response(intents_list, intents_json):
         if i['tag'] == tag:
             result = random.choice(i['responses'])
             break
-    return (">>") + result
+    return ("Bot: ") + result
 
 
 print("Bot is on!")
@@ -62,7 +62,7 @@ print("Bot is on!")
 # Chat!
 
 while True:
-    message = input("")
+    message = input("You: ")
     if message == "exit":
         break
     else:
