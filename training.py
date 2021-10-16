@@ -3,8 +3,8 @@ from tensorflow.keras.layers import Dense, Activation, Dropout  # Features of th
 from tensorflow.keras.models import Sequential  # provides training features
 from nltk.stem import WordNetLemmatizer  # treats words like: work, working, works as work
 import random
-import json
-import pickle
+import json  # loading data
+import pickle  # saving data
 import numpy as np
 
 import nltk
@@ -18,7 +18,6 @@ classes = []
 documents = []
 ignore_letters = ["?", "!", ".", ","]
 
-
 # Generate a tuple containing all the intents from intents.json
 for intent in intents['intents']:
     for pattern in intent['patterns']:
@@ -28,7 +27,6 @@ for intent in intents['intents']:
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 
-# print(documents)
 
 words = [lemmatizer.lemmatize(word) for word in words if word not in ignore_letters]
 words = sorted(set(words))  # eliminate duplicates and turn it back into a (now sorted) list
