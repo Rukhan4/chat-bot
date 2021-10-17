@@ -24,3 +24,18 @@ data['intents'].append({
 
 with open('intents.json', 'w') as training:
     json.dump(data, training)
+
+    {
+        "tag": "friends",
+        "patterns": [
+            "friend fact",
+            "about friend",
+            "tell me about friend"
+        ],
+        "responses": [
+            "Brandon is a Pinoy",
+            "Sooks is a Donkey",
+            "Ry is a flyguy"
+        ],
+        "context_set": ""
+    },

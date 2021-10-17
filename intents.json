@@ -62,20 +62,6 @@
             "context_set": ""
         },
         {
-            "tag": "friends",
-            "patterns": [
-                "friend fact",
-                "about friend",
-                "tell me about friend"
-            ],
-            "responses": [
-                "Brandon is a Pinoy",
-                "Sooks is a Donkey",
-                "Ry is a flyguy"
-            ],
-            "context_set": ""
-        },
-        {
             "tag": "goodbye",
             "patterns": [
                 "cya",
