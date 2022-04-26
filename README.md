@@ -2,7 +2,7 @@
 
 Sequential Neural Network chatbot with several responses to different questions.
 
-## Utilizes:
+## Languages and Tools
 
 ### Python
 
