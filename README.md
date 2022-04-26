@@ -3,6 +3,9 @@
 Sequential Neural Network chatbot with several responses to different questions.
 
 ## Utilizes:
+
+### Python
+
 Tensorflow
 
 Pickle
